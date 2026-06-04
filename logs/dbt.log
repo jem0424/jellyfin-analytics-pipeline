@@ -1,0 +1,77 @@
+[0m04:31:31.195073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77874d4eae00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77874c4eb6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77874c4eb670>]}
+
+
+============================== 04:31:31.203506 | 1ad35a45-c926-44fa-a245-208774c3f255 ==============================
+[0m04:31:31.203506 [info ] [MainThread]: Running with dbt=1.12.0-b1
+[0m04:31:31.204406 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init jellyfin_dbt', 'quiet': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs', 'write_json': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/ubuntu/.dbt', 'cache_selected_only': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'introspect': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'log_cache_events': 'False', 'use_colors': 'True', 'debug': 'False', 'empty': 'None', 'fail_fast': 'False', 'warn_error': 'None'}
+[0m04:31:31.280205 [info ] [MainThread]: Creating dbt configuration folder at /home/ubuntu/.dbt
+[0m04:31:31.286191 [debug] [MainThread]: Starter project path: /home/ubuntu/jellyfin-pipeline/venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m04:31:31.296793 [info ] [MainThread]: Setting up your profile.
+[0m04:33:14.366860 [info ] [MainThread]: Profile jellyfin_dbt written to /home/ubuntu/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m04:33:14.372688 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m04:33:14.373782 [info ] [MainThread]: dbt version: 1.12.0-b1
+[0m04:33:14.374440 [info ] [MainThread]: python version: 3.10.12
+[0m04:33:14.375005 [info ] [MainThread]: python path: /home/ubuntu/jellyfin-pipeline/venv/bin/python3
+[0m04:33:14.375707 [info ] [MainThread]: os info: Linux-6.8.0-1052-oracle-x86_64-with-glibc2.35
+[0m04:33:14.469995 [info ] [MainThread]: Using profiles dir at /home/ubuntu/.dbt
+[0m04:33:14.470833 [info ] [MainThread]: Using profiles.yml file at /home/ubuntu/.dbt/profiles.yml
+[0m04:33:14.471475 [info ] [MainThread]: Using dbt_project.yml file at /home/ubuntu/jellyfin-pipeline/jellyfin_dbt/dbt_project.yml
+[0m04:33:14.473259 [info ] [MainThread]: adapter type: postgres
+[0m04:33:14.473965 [info ] [MainThread]: adapter version: 1.10.0
+[0m04:33:14.900658 [info ] [MainThread]: Configuration:
+[0m04:33:14.901416 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m04:33:14.902074 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m04:33:14.902587 [info ] [MainThread]: Required dependencies:
+[0m04:33:14.903165 [debug] [MainThread]: Executing "git --help"
+[0m04:33:14.974474 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m04:33:14.975467 [debug] [MainThread]: STDERR: "b''"
+[0m04:33:14.976089 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m04:33:14.976705 [info ] [MainThread]: Connection:
+[0m04:33:14.977367 [info ] [MainThread]:   host: localhost
+[0m04:33:14.978011 [info ] [MainThread]:   port: 5432
+[0m04:33:14.978611 [info ] [MainThread]:   user: jellyfin_user
+[0m04:33:14.979353 [info ] [MainThread]:   database: jellyfin_analytics
+[0m04:33:14.980052 [info ] [MainThread]:   schema: analytics
+[0m04:33:14.980602 [info ] [MainThread]:   connect_timeout: 10
+[0m04:33:14.981784 [info ] [MainThread]:   role: None
+[0m04:33:14.982338 [info ] [MainThread]:   search_path: None
+[0m04:33:14.982891 [info ] [MainThread]:   keepalives_idle: 0
+[0m04:33:14.983447 [info ] [MainThread]:   sslmode: None
+[0m04:33:14.984056 [info ] [MainThread]:   sslcert: None
+[0m04:33:14.984587 [info ] [MainThread]:   sslkey: None
+[0m04:33:14.985181 [info ] [MainThread]:   sslrootcert: None
+[0m04:33:14.985721 [info ] [MainThread]:   application_name: dbt
+[0m04:33:14.986311 [info ] [MainThread]:   retries: 1
+[0m04:33:14.987181 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m04:33:15.487370 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m04:33:15.721682 [debug] [MainThread]: Using postgres connection "debug"
+[0m04:33:15.722350 [debug] [MainThread]: On debug: select 1 as id
+[0m04:33:15.722834 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m04:33:16.017280 [debug] [MainThread]: SQL status: SELECT 1 in 0.294 seconds
+[0m04:33:16.018928 [debug] [MainThread]: On debug: Close
+[0m04:33:16.019715 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m04:33:16.020367 [info ] [MainThread]: [32mAll checks passed![0m
+[0m04:33:16.020977 [info ] [MainThread]: Your new dbt project "jellyfin_dbt" was created!
+Initialized new project in /home/ubuntu/jellyfin-pipeline/jellyfin_dbt/jellyfin_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m04:33:16.023832 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 105.119804, "process_in_blocks": "86344", "process_kernel_time": 0.717465, "process_mem_max_rss": "116364", "process_out_blocks": "88", "process_user_time": 5.157843}
+[0m04:33:16.062706 [debug] [MainThread]: Command `dbt init` succeeded at 04:33:16.062430 after 105.16 seconds
+[0m04:33:16.063450 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m04:33:16.064192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77874d4eae00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77874c4ebf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77874c4eb6a0>]}
+[0m04:33:16.065087 [debug] [MainThread]: Flushing usage events
+[0m04:33:16.303486 [debug] [MainThread]: An error was encountered while trying to flush usage events
